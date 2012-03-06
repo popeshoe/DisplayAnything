@@ -780,7 +780,7 @@ HTML;
 						$file = new UploadAnythingFile();//TODO - this should match the file type provided
 						$file->Name = $filename;
 						$file->Title = $filename;
-						//$file->Filename = $filename;//required ?
+						$file->Filename = $filename;//required ?
 						$file->ShowInSearch = 0;
 						$file->ParentID = $folder->ID;
 						$file->OwnerID = $member->ID;
@@ -809,7 +809,7 @@ HTML;
 						} else if($file instanceof File) {
 							$file->Name = $filename;
 							$file->Title = $filename;
-							//$file->Filename = $filename;//required?
+							$file->Filename = $filename;//required?
 							$file->ShowInSearch = 0;
 							$file->ParentID = $folder->ID;
 							$file->OwnerID = $member->ID;
